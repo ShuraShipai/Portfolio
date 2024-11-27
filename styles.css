@@ -1,0 +1,201 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #2d1f66; /* Dark Purple Background */
+    color: #fff; /* White text for readability */
+    transition: background 0.3s ease-in-out;
+}
+
+/* Header */
+header {
+    background: #1f0e3a; /* Darker Purple */
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+    border-bottom: 3px solid #340f6c; /* Subtle border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+.toggle-button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #340f6c;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+    padding: 4rem 0;
+    background-color: #2a1841; /* Darker Purple Background */
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #ff66cc; /* Light Pink Accent */
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+/* Expertise Section */
+#expertise {
+    padding: 4rem 0;
+    background-color: #2a1841;
+}
+
+#expertise h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #ff66cc; /* Light Pink Accent */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Expertise Grid Layout */
+#expertise .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#expertise .expertise-item {
+    background-color: #1f0e3a; /* Dark Purple Box */
+    border: 2px solid #340f6c; /* Subtle border */
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#expertise .expertise-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #ff66cc; /* Light Pink Accent */
+    font-weight: 600;
+}
+
+#expertise .expertise-item p {
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+#expertise .expertise-item:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Contact Section */
+#contact {
+    padding: 4rem 0;
+    background-color: #2a1841;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color: #ff66cc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #340f6c; /* Darker Purple for form */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    margin: 1rem 0;
+    border: 2px solid #4a1f5f; /* Slightly lighter border */
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background: #1f0e3a; /* Dark Input Field */
+    color: #fff; /* White text */
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    border-color: #ff66cc; /* Light Pink border on focus */
+    outline: none;
+}
+
+#contact form button {
+    background-color: #ff66cc; /* Light Pink Button */
+    color: white;
+    padding: 1.2rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #e65e99; /* Slightly darker pink shade */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+/* Footer */
+footer {
+    background-color: #1f0e3a; /* Dark Purple Footer */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 3px solid #340f6c;
+}
+
+footer a {
+    color: #ff66cc; /* Light Pink Links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
